@@ -23,24 +23,28 @@ int main()
 	}
 
 	switch(choice)
-	{
-		case 0:
-			out=index_first_zero(arr, i);
-			break;
-		case 1:
-			out=index_last_zero(arr, i);
-			break;
-		case 2:
-			out=sum_between(arr, i);
-			break;
-		case 3:
-			out=sum_before_and_after(arr, i);
-			break;
-		default:
-			printf("Данные некорректны");
-			break;
-	}
-	printf("%d\n",out);
-	return 0;
+        {
+                case 0:
+                        out=index_first_zero(arr, i);
+                        printf("%d\n",out);
+                        break;
+                case 1:
+                        out=index_last_zero(arr, i);
+                        printf("%d\n",out);
+                        break;
+                case 2:
+                        out=sum_between(arr, i);
+                        printf("%d\n",out);
+                        break;
+                case 3:
+                        out=sum_before_and_after(arr, i);
+                        printf("%d\n",out);
+                        break;
+                default:
+                        printf("Данные некорректны\n");
+                        break;
+        }
+
+        return 0;
 
 }
